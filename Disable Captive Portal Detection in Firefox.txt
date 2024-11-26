@@ -1,0 +1,47 @@
+Topic: Disable Captive Portal Detection in Firefox 
+
+What is captive portal detection?
+
+Captive portal detection is a feature in Firefox that determines if a network connection requires you to log in or accept terms before making a connection to the internet.
+Firefox includes a feature called captive portal detection, which checks if a network connection requires a login, commonly used in public Wi-Fi hotspots. Disabling this feature might be useful in certain scenarios, such as improving privacy or avoiding unnecessary network queries. Follow the steps below to disable captive portal detection in Firefox.
+________________________________________Steps to Disable Captive Portal Detection in Firefox
+
+We want to disable Firefox's captive portal detection to stop it from sending network queries to http://detectportal.firefox.com 
+________________________________________
+
+Step 1: Open Firefox Configuration Settings
+1.	Launch Firefox on your computer.
+2.	In the address bar, type:
+about:config
+3.	Press Enter.
+________________________________________
+
+Step 2: Accept the Risk
+1.	A warning message appears: “Proceed with Caution”.
+2.	Click on "Accept the Risk and Continue" to access advanced settings.
+________________________________________
+
+Step 3: Locate Captive Portal Setting
+1.	In the search bar on the configuration page, type:
+network.captive-portal-service.enabled
+________________________________________
+
+Step 4: Change the Setting
+1.	Locate the preference network.captive-portal-service.enabled.
+2.	Notice its current value: true (enabled by default).
+3.	Toggle the value to false by clicking the highlighted toggle button next to the setting.
+________________________________________
+
+Step 5: Confirm the Change
+•	Verify that the value has changed to false.
+•	This disables captive portal detection in Firefox.
+________________________________________
+
+Outcome
+Firefox will no longer query http://detectportal.firefox.com to check for captive portals. This change can enhance privacy and avoid unnecessary network checks.
+
+
+ 
+Tip: You can re-enable this feature anytime by following the same steps and toggling the value back to true.
+
+
