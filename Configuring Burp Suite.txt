@@ -1,0 +1,46 @@
+Topic: Configuring Burp Suite for Web Traffic Interception
+Introduction
+Burp Suite is a powerful tool used by security professionals to intercept and manipulate web traffic. This tutorial guides you through the setup and basic configuration of Burp Suite Community Edition on a Windows environment.
+Step 1: Launch Burp Suite Community Edition
+1.	Open the Burp Suite Community Edition application on your system.
+•	Navigate to the program and double-click to launch it.
+•	On the startup screen, select Temporary Project and click Next.
+•	Choose Use Burp Defaults and click Start Burp.
+________________________________________
+Step 2: Access the Proxy Tab
+1.	Once Burp Suite is running, locate the tabs at the top of the application.
+2.	Click on the Proxy tab. This is where you will configure and manage interception settings.
+________________________________________
+Step 3: Turn on Interception
+1.	Inside the Proxy tab, you will see a sub-tab called Intercept.
+2.	Ensure that the Intercept is on button is active.
+•	If it shows Intercept is off, click it to enable interception.
+________________________________________
+Step 4: Configure Proxy Listener
+Burp Suite uses an internal proxy to intercept web traffic. To configure it:
+1.	Still in the Proxy tab, navigate to the Options sub-tab.
+2.	Under the Proxy Listeners section, ensure the default listener is enabled.
+•	This typically listens on 127.0.0.1 (localhost) and port 8080.
+•	You can modify the listener to use common ports like 80, 443, 8080, or 8443, depending on your needs.
+________________________________________
+Step 5: Configure Browser or Application
+To route traffic through Burp Suite:
+1.	Open the browser or application whose traffic you want to intercept.
+2.	Set the proxy settings to use the IP address and port of your Burp Suite proxy listener (e.g., 127.0.0.1:8080).
+•	In Firefox:
+•	Go to Settings → Network Settings → Manual Proxy Configuration.
+•	Enter the IP address (127.0.0.1) and port (8080).
+•	Enable the option Use this proxy for all protocols.
+________________________________________
+Step 6: Test the Configuration
+1.	Open a web page in your configured browser.
+2.	Return to Burp Suite and check the Intercept tab.
+•	You should see the web traffic displayed here.
+________________________________________
+Tips and Recommendations
+•	Common Port Numbers: Use commonly known port numbers such as 80 (HTTP), 443 (HTTPS), 8080, or 8443 for smoother operation.
+•	HTTPS Traffic: For HTTPS interception, Burp Suite requires installing its certificate in the browser.
+•	Practice Caution: Only intercept traffic from environments you own or have permission to test. Unauthorized interception is illegal.
+________________________________________
+You’ve successfully configured Burp Suite to intercept web traffic! This setup is foundational for testing and analyzing web applications.
+
