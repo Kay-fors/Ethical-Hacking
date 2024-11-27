@@ -1,3 +1,4 @@
+Configuring Firefox to Use Burp Suite Proxy Listeners
 Overview
 
 This tutorial explains how to configure Mozilla Firefox to use Burp Suite proxy listeners for intercepting and analyzing web traffic.
