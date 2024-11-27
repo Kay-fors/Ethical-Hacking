@@ -1,0 +1,47 @@
+Overview
+
+This tutorial explains how to configure Mozilla Firefox to use Burp Suite proxy listeners for intercepting and analyzing web traffic.
+________________________________________
+
+Prerequisites
+1.	Installed Software:
+o	Mozilla Firefox
+o	Burp Suite
+2.	Basic Setup:
+o	Burp Suite should be running on your computer.
+o	You should know the IP address and port number of Burp Suite’s proxy listener (default: 127.0.0.1 and port 8080).
+________________________________________
+
+Steps
+Step 1: Open Burp Suite and Confirm Proxy Settings
+1.	Launch Burp Suite.
+2.	Navigate to the Proxy tab and click Proxy Setting.
+3.	Select add to input your port number (e.g. 8080)
+4.	 Select the Specified address radio button to add intended server IP address or (default IP 127.0.0.1).
+5.	Click on OK.
+
+Step 2: Open Firefox Network Settings
+1.	Launch Mozilla Firefox.
+2.	Click the hamburger menu (three horizontal lines) in the top-right corner.
+3.	Select Settings (or Preferences on some versions).
+4.	Scroll down to the Network Settings section and click Settings.
+
+Step 3: Configure Manual Proxy Settings
+1.	In the Connection Settings dialog, select Manual proxy configuration.
+2.	In the HTTP Proxy field, enter the IP address 127.0.0.1 or your IP.
+3.	In the Port field, enter 8080 (or the port configured in Burp Suite).
+4.	Check the box that says Use this proxy server for all protocols.
+5.	Click OK to save your settings.
+
+Step 4: Disable Firefox DNS over HTTPS (Optional but Recommended)
+1.	In the Network Settings section, locate the Enable DNS over HTTPS option.
+2.	Uncheck the box if it is enabled.
+
+Step 5: Verify the Configuration
+1.	Return to Burp Suite and ensure the Intercept mode is turned on in the Proxy tab.
+2.	Open a new tab in Firefox and visit any website.
+3.	Check Burp Suite to see if the traffic is intercepted.
+________________________________________
+
+By following this steps, you’ll successfully configure Firefox to use Burp Suite’s proxy listener for your web traffic analysis.
+
